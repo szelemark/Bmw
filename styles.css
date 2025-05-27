@@ -1,0 +1,45 @@
+body {
+  background-color: #aed4ff;
+}
+
+h5{
+    font-size: 20px;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+.hero-section {
+  background: url('logo.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+}
+
+.hero-section .overlay {
+  background-color: rgba(13, 27, 42, 0.7);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+    background-color: beige;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  
+}
+
+.card-title {
+  color: navy;
+}
+
+.card-text {
+  color: navy;
+}
