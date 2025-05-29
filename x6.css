@@ -1,0 +1,14 @@
+body{
+    background-color:  #aed4ff;
+}
+header{
+background-color:  #6d96d3bb;
+}
+header a{
+text-decoration: none;
+color: black;
+font-size: 24px;
+}
+footer{
+    background-color:  #6d96d3bb;
+}

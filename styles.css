@@ -11,6 +11,7 @@ p{
 }
 
 .hero-section {
+  margin-bottom: 100px;
   background: url('logo.png') no-repeat center center;
   background-size: cover;
   position: relative;
@@ -42,4 +43,7 @@ p{
 
 .card-text {
   color: navy;
+}
+footer{
+  background-color: #6d96d3bb ;
 }
