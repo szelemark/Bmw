@@ -27,7 +27,7 @@ p{
 }
 
 .card {
-    background-color: beige;
+    background-color: #FFEEDB;
   border: none;
   transition: transform 0.3s ease;
 }
@@ -38,7 +38,7 @@ p{
 }
 
 .card-title {
-  color: navy;
+  color: #467599;
 }
 
 .card-text {
