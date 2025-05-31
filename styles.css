@@ -42,8 +42,119 @@ p{
 }
 
 .card-text {
-  color: navy;
+  color: royalblue;
+  font-size: 16px;
 }
-footer{
-  background-color: #6d96d3bb ;
+
+a {
+  text-decoration: none;
+}
+h4 {
+  color:#467599 ;
+  text-align: center;
+  font-size: 24px;
+  margin-top: -30px;
+  margin-bottom: 60px;
+}
+footer {
+  background-color: #0d1b2a;
+  color: #fff;
+  box-shadow: 0 -4px 24px 0 rgba(70, 117, 153, 0.15);
+  letter-spacing: 0.5px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.footer-logo {
+  height: 64px;
+  filter: drop-shadow(0 2px 8px #46759988);
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+.footer-logo:hover {
+  transform: scale(1.15) rotate(-5deg);
+}
+.footer-motto {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #6d96d3;
+  text-shadow: 0 2px 8px #0d1b2a44;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.footer-text {
+  font-size: 0.95rem;
+  color: #bcdcff;
+  opacity: 0.85;
+}
+.footer-keywords {
+  font-size: 1.1rem;
+  color: #bcdcff;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+.footer-slogan {
+  font-size: 0.95rem;
+  color: #bcdcff;
+  opacity: 0.85;
+}
+
+/* Footer column alignment for desktop */
+@media (min-width: 768px) {
+  footer .col-md-4:first-child {
+    text-align: left;
+  }
+  footer .col-md-4:nth-child(2) {
+    text-align: center;
+  }
+  footer .col-md-4:last-child {
+    text-align: right;
+  }
+}
+
+/* Footer column alignment for mobile */
+@media (max-width: 767.98px) {
+  footer .col-md-4 {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  footer .row {
+    flex-direction: column !important;
+  }
+  footer .row > div {
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center !important;
+  }
+  .footer-logo {
+    height: 48px;
+    margin-bottom: 8px;
+  }
+  .footer-motto {
+    font-size: 1.3rem;
+  }
+  .footer-keywords {
+    font-size: 1rem;
+  }
+  .footer-slogan, .footer-text {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer-motto {
+    font-size: 1.1rem;
+  }
+  .footer-logo {
+    height: 38px;
+  }
+  .footer-keywords {
+    font-size: 0.95rem;
+  }
 }

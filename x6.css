@@ -8,7 +8,17 @@ header a{
 text-decoration: none;
 color: black;
 font-size: 24px;
+margin-left: 40px;
 }
 footer{
     background-color:  #6d96d3bb;
+}
+@media screen and (max-width: 600px) {
+    header a {
+        display: flex;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
