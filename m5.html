@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="HU">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMW M5</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="m5.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="m5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
     <header>
-        <a href="index.html"><i class="bi-house-fill"></i> Home</a>
+      <a href="index.html"
+        ><i class="bi-house-fill"></i><span class="home-text"> Home</span></a
+      >
     </header>
     <div class="info">
-
-    </div> 
-    <footer>
-    
-    </footer>
-</body>
+      <button id="rev-btn" class="rev-btn">Rev it!</button>
+      <audio id="rev-audio" src="m5rev.mp4"></audio>
+    </div>
+    <footer></footer>
+    <script>
+      document.getElementById("rev-btn").addEventListener("click", function () {
+        var audio = document.getElementById("rev-audio");
+        audio.currentTime = 0;
+        audio.play();
+      });
+    </script>
+  </body>
 </html>

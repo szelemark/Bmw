@@ -1,24 +1,68 @@
-body{
-    background-color:  #aed4ff;
+body {
+  background-color: #aed4ff;
 }
-header{
-background-color:  #6d96d3bb;
+header {
+  background-color: #6d96d3bb;
 }
-header a{
-text-decoration: none;
-color: black;
-font-size: 24px;
-margin-left: 40px;
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  margin-left: 40px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-footer{
-    background-color:  #6d96d3bb;
+header a .home-text {
+  display: none;
+  margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 2, 0.6, 1),
+    transform 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+  transform: translateX(-20px) scale(0.8) rotate(-10deg);
+  filter: blur(2px);
+}
+header a:hover .home-text {
+  display: inline;
+  opacity: 1;
+  transform: translateX(0) scale(1) rotate(0deg);
+  filter: blur(0);
+}
+footer {
+  background-color: #6d96d3bb;
+}
+.rev-btn {
+  background: linear-gradient(90deg, #467599 0%, #6d96d3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 36px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px #46759944;
+  cursor: pointer;
+  margin: 32px auto 24px auto;
+  display: block;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+.rev-btn:hover {
+  background: linear-gradient(90deg, #6d96d3 0%, #467599 100%);
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 8px 24px #46759966;
 }
 @media screen and (max-width: 600px) {
-    header a {
-        display: flex;
-        font-size: 22px;
-        align-items: center;
-        justify-content: center;
-    }
-
+  header a {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+  }
+  header a .home-text {
+    display: inline;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
 }

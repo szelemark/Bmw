@@ -2,17 +2,17 @@ body {
   background-color: #aed4ff;
 }
 
-h5{
-    font-size: 20px;
-    text-align: center;
+h5 {
+  font-size: 20px;
+  text-align: center;
 }
-p{
-    text-align: center;
+p {
+  text-align: center;
 }
 
 .hero-section {
   margin-bottom: 100px;
-  background: url('logo.png') no-repeat center center;
+  background: url("logo.png") no-repeat center center;
   background-size: cover;
   position: relative;
   height: 50vh;
@@ -27,14 +27,13 @@ p{
 }
 
 .card {
-    background-color: #FFEEDB;
+  background-color: #ffeedb;
   border: none;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.1);
-  
 }
 
 .card-title {
@@ -50,7 +49,7 @@ a {
   text-decoration: none;
 }
 h4 {
-  color:#467599 ;
+  color: #467599;
   text-align: center;
   font-size: 24px;
   margin-top: -30px;
@@ -63,17 +62,30 @@ footer {
   letter-spacing: 0.5px;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
+  position: relative;
+}
+.col-md-4.footer-col {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
 }
 .footer-logo {
-  height: 64px;
+  height: 80px;
   filter: drop-shadow(0 2px 8px #46759988);
-  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  margin-left: 0;
+  margin-top: -40px;
 }
 .footer-logo:hover {
   transform: scale(1.15) rotate(-5deg);
 }
 .footer-motto {
-  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-family: "Segoe UI", "Arial", sans-serif;
   font-weight: 700;
   font-size: 2.2rem;
   color: #6d96d3;
@@ -97,9 +109,12 @@ footer {
   font-size: 0.95rem;
   color: #bcdcff;
   opacity: 0.85;
+  margin-left: 100px;
+}
+.footer-col {
+  margin-bottom: 1rem;
 }
 
-/* Footer column alignment for desktop */
 @media (min-width: 768px) {
   footer .col-md-4:first-child {
     text-align: left;
@@ -110,9 +125,11 @@ footer {
   footer .col-md-4:last-child {
     text-align: right;
   }
+  .footer-col {
+    margin-bottom: 0;
+  }
 }
 
-/* Footer column alignment for mobile */
 @media (max-width: 767.98px) {
   footer .col-md-4 {
     text-align: center !important;
@@ -134,17 +151,51 @@ footer {
     text-align: center !important;
   }
   .footer-logo {
-    height: 48px;
-    margin-bottom: 8px;
+    position: static;
+    display: block;
+    margin: 0 auto 8px auto !important;
+    left: unset;
+    top: unset;
+    transform: none;
+    float: none;
+    align-self: center !important;
+    justify-self: center !important;
+    max-width: 100%;
+  }
+  .col-md-4.footer-col {
+    display: block !important;
+    text-align: center !important;
+    align-items: unset !important;
+    justify-content: unset !important;
+    min-height: unset !important;
   }
   .footer-motto {
     font-size: 1.3rem;
+    margin: auto;
+  }
+  .footer-keywords {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    white-space: normal !important;
+  }
+  .footer-slogan {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .col-md-4.footer-col:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .footer-keywords {
     font-size: 1rem;
   }
-  .footer-slogan, .footer-text {
+  .footer-slogan,
+  .footer-text {
     font-size: 0.9rem;
+    margin: auto;
   }
 }
 @media (max-width: 480px) {
@@ -157,4 +208,64 @@ footer {
   .footer-keywords {
     font-size: 0.95rem;
   }
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.fw-bold {
+  font-weight: 700 !important;
+}
+.fw-light {
+  font-weight: 300 !important;
+}
+.fst-italic {
+  font-style: italic !important;
+}
+.mt-5 {
+  margin-top: 3rem !important;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+}
+img.img-fluid,
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
 }

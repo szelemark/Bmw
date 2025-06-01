@@ -1,104 +1,138 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BMW Showcase</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="hero-section">
-    <div class="overlay">
-      <div class="container text-center text-white py-5">
-
-        <h1 class="display-4">BMW Collection</h1>
-        <p class="lead">Experience the ultimate driving machines</p>
-      </div>
-    </div>
-  </div>
-  <div class="promo">
-    <h4>Meet the quality itself, BMW, <br>
-        Get to know the world of BMW, 
-        where luxury meets performance.
-        
-    </h4>
-  </div>
-
-  
-  <div class="container my-5">
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-3">
-        <a href="m4.html" class="text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="M4 GTS.jpg" class="card-img-top" alt="BMW M4 GTS">
-            <div class="card-body">
-              <h5 class="card-title">BMW M4 GTS</h5>
-              <p class="card-text">A track-ready beast with 493 hp and carbon fiber enhancements.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <a href="i8.html" class="text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="i8.jpg" id="i8" class="card-img-top" alt="BMW i8">
-            <div class="card-body">
-              <h5 class="card-title">BMW i8</h5>
-              <p class="card-text">A futuristic hybrid sports car combining performance and efficiency.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <a href="m5.html" class="text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="M5.jpg" class="card-img-top" alt="BMW M5">
-            <div class="card-body">
-              <h5 class="card-title">BMW M5</h5>
-              <p class="card-text">A luxury sedan with a 600 hp V8 engine and dynamic driving capabilities.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <a href="x6.html" class="text-dark">
-          <div class="card h-100 shadow-sm">
-            <img src="X6.jpg" class="card-img-top" alt="BMW X6">
-            <div class="card-body">
-              <h5 class="card-title">BMW X6</h5>
-              <p class="card-text">A sporty SUV coupe blending luxury with off-road prowess.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <img src="logo.png" alt="BMW Logo" class="footer-logo">
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0">
-          <p class="footer-motto">Sheer Driving Pleasure</p>
-          <div class="footer-text">BMW • Since 1916</div>
-        </div>
-        <div class="col-md-4">
-          <div class="footer-keywords">Innovation &bull; Luxury &bull; Passion</div><br>
-          <div class="footer-slogan">Follow your dreams. Drive BMW.</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW Showcase</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="overlay">
+        <div class="container text-center text-white py-5">
+          <h1 class="display-4">BMW Collection</h1>
+          <p class="lead">Experience the ultimate driving machines</p>
         </div>
       </div>
     </div>
-  </footer>
+    <div class="promo">
+      <h4>
+        Meet the quality itself, BMW, <br />
+        Get to know the world of BMW, where luxury meets performance.
+      </h4>
+    </div>
 
-</body>
+    <div class="container my-5">
+      <div class="row g-4">
+        <div
+          class="col-md-6 col-lg-3"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <a href="m4.html" class="text-dark">
+            <div class="card h-100 shadow-sm">
+              <img src="M4 GTS.jpg" class="card-img-top" alt="BMW M4 GTS" />
+              <div class="card-body">
+                <h5 class="card-title">BMW M4 GTS</h5>
+                <p class="card-text">
+                  A track-ready beast with 493 hp and carbon fiber enhancements.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <a href="i8.html" class="text-dark">
+            <div class="card h-100 shadow-sm">
+              <img src="i8.jpg" id="i8" class="card-img-top" alt="BMW i8" />
+              <div class="card-body">
+                <h5 class="card-title">BMW i8</h5>
+                <p class="card-text">
+                  A futuristic hybrid sports car combining performance and
+                  efficiency.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="col-md-6 col-lg-3"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          <a href="m5.html" class="text-dark">
+            <div class="card h-100 shadow-sm">
+              <img src="M5.jpg" class="card-img-top" alt="BMW M5" />
+              <div class="card-body">
+                <h5 class="card-title">BMW M5</h5>
+                <p class="card-text">
+                  A luxury sedan with a 600 hp V8 engine and dynamic driving
+                  capabilities.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="col-md-6 col-lg-3"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <a href="x6.html" class="text-dark">
+            <div class="card h-100 shadow-sm">
+              <img src="X6.jpg" class="card-img-top" alt="BMW X6" />
+              <div class="card-body">
+                <h5 class="card-title">BMW X6</h5>
+                <p class="card-text">
+                  A sporty SUV coupe blending luxury with off-road prowess.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <a href="https://www.bmw.hu/hu/index.html"><img src="logo.png" alt="BMW Logo" class="footer-logo" /></a>
+          </div>
+          <div class="col-md-4 footer-col">
+            <p class="footer-motto">
+              Sheer Driving Pleasure
+              <br />
+              <span class="footer-text">BMW • Since 1916</span>
+            </p>
+          </div>
+          <div class="col-md-4 footer-col">
+            <div class="footer-keywords" style="white-space: nowrap">
+              Innovation &bull; Luxury &bull; Passion &bull; Performance &bull;
+            </div>
+            <br />
+            <div class="footer-slogan">
+              <span style="white-space: nowrap">Follow your dreams,</span
+              ><br />Drive BMW.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

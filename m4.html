@@ -1,22 +1,137 @@
 <!DOCTYPE html>
 <html lang="HU">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMW M4</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="m4.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="m4.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
     <header>
-        <a href="index.html"><i class="bi-house-fill"></i> Home</a>
+      <a href="index.html"
+        ><i class="bi-house-fill"></i><span class="home-text"> Home</span></a
+      >
     </header>
-    <div class="info">
-
-    </div> 
+    <main class="car-main">
+      <section class="car-hero-card">
+        <h1 class="car-hero-title">BMW M4 GTS</h1>
+        <hr class="car-hero-divider" />
+        <div class="car-hero-flex">
+          <img src="M4 GTS.jpg" alt="BMW M4 GTS" class="car-hero-img" />
+          <div class="car-hero-side">
+            <p class="car-tagline">
+              Track-bred performance, everyday excitement.
+            </p>
+            <div class="car-sound-demo">
+              <div class="car-sound-label">The sound speaks for itself</div>
+              <button id="rev-btn" class="rev-btn">Rev it!</button>
+              <audio id="rev-audio" src="m4rev.mp4"></audio>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="car-specs">
+        <h2>Key Specifications</h2>
+        <ul>
+          <li><strong>Engine:</strong> 3.0L TwinPower Turbo Inline-6</li>
+          <li><strong>Power:</strong> 500 HP (368 kW)</li>
+          <li><strong>0-100 km/h:</strong> 3.8 seconds</li>
+          <li><strong>Top Speed:</strong> 305 km/h (electronically limited)</li>
+          <li><strong>Transmission:</strong> 7-speed M DCT</li>
+          <li><strong>Drive:</strong> Rear-wheel drive</li>
+          <li><strong>Weight:</strong> 1,585 kg</li>
+        </ul>
+      </section>
+      <section class="car-summary">
+        <h2>About the M4 GTS</h2>
+        <p>
+          The BMW M4 GTS is a limited-edition, high-performance coupe engineered
+          for the track but legal for the road. It features a water-injection
+          system for increased power, lightweight carbon fiber components, and a
+          motorsport-inspired suspension. The aggressive aerodynamics, including
+          a manually adjustable rear wing and front splitter, provide
+          exceptional downforce and stability at high speeds.
+        </p>
+        <p>
+          Inside, the M4 GTS offers a focused, driver-centric cockpit with
+          Alcantara accents, racing seats, and a roll cage. Despite its track
+          focus, it retains essential comforts and advanced BMW technology,
+          making it a thrilling yet practical choice for enthusiasts.
+        </p>
+      </section>
+      <section class="car-features">
+        <h2>Highlights</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="bi bi-lightning-charge"></i>
+            <h3>Water Injection</h3>
+            <p>Innovative cooling for more power and efficiency.</p>
+          </div>
+          <div class="feature-card">
+            <i class="bi bi-wind"></i>
+            <h3>Carbon Fiber</h3>
+            <p>
+              Extensive use of carbon fiber for reduced weight and improved
+              handling.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="bi bi-gear"></i>
+            <h3>Track Suspension</h3>
+            <p>
+              Three-way adjustable coilover suspension for ultimate control.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="bi bi-speedometer2"></i>
+            <h3>Motorsport DNA</h3>
+            <p>
+              Inspired by BMW’s racing heritage, built for pure driving
+              pleasure.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
-    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <a href="https://www.bmw.hu/hu/index.html"><img src="logo.png" alt="BMW Logo" class="footer-logo" /></a>
+          </div>
+          <div class="col-md-4 footer-col">
+            <p class="footer-motto">
+              Sheer Driving Pleasure
+              <br />
+              <span class="footer-text">BMW • Since 1916</span>
+            </p>
+          </div>
+          <div class="col-md-4 footer-col">
+            <div class="footer-keywords" style="white-space: nowrap">
+              Innovation &bull; Luxury &bull; Passion &bull; Performance &bull;
+            </div>
+            <br />
+            <div class="footer-slogan">
+              <span style="white-space: nowrap">Follow your dreams,</span><br />Drive BMW.
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+    <script>
+      document.getElementById("rev-btn").addEventListener("click", function () {
+        var audio = document.getElementById("rev-audio");
+        audio.currentTime = 0;
+        audio.play();
+      });
+    </script>
+  </body>
 </html>
